@@ -8,8 +8,8 @@ public class Restaurante{
 	private String avaR;
 	private String avaP;
 	private String avaS;
-	private int pedido;
-	private float preco;
+	private float pedido;
+	private double preco;
 	
 	
 	public Restaurante(String nomeRes, String cidade, String end, String cardapio, String avaR,String avaS, String avaP, float preco) {
@@ -102,22 +102,22 @@ public class Restaurante{
 	}
 
 
-	public int getPedido() {
+	public float getPedido() {
 		return pedido;
 	}
 
 
-	public void setPedido(int pedido) {
+	public void setPedido(float pedido) {
 		this.pedido = pedido;
 	}
 
 
-	public float getPreco() {
+	public double getPreco() {
 		return preco;
 	}
 
 
-	public void setPreco(float preco) {
+	public void setPreco(double preco) {
 		this.preco = preco;
 	}
 
