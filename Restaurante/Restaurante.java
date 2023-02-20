@@ -1,7 +1,7 @@
 package Restaurante;
 
 public class Restaurante{
-	private String nomeRes;
+	private String nome;
 	private String cidade;
 	private String end;
 	private String cardapio;
@@ -12,9 +12,9 @@ public class Restaurante{
 	private double preco;
 	
 	
-	public Restaurante(String nomeRes, String cidade, String end, String cardapio, String avaR,String avaS, String avaP, float preco) {
+	public Restaurante(String nome, String cidade, String end, String cardapio, String avaR,String avaS, String avaP, float preco) {
 		super();
-		this.nomeRes = nomeRes;
+		this.nome = nome;
 		this.cidade = cidade;
 		this.end = end;
 		this.cardapio = cardapio;
@@ -33,12 +33,12 @@ public class Restaurante{
 
 
 	public String getNomeRes() {
-		return nomeRes;
+		return nome;
 	}
 
 
 	public void setNomeRes(String nomeRes) {
-		this.nomeRes = nomeRes;
+		this.nome = nomeRes;
 	}
 
 
