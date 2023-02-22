@@ -12,28 +12,33 @@ public class MenuSistemaPrincipal {
 		int op;
 		 do {
 			// op = ClassePrincipal.main(args);
-			 System.out.println("\n Cadastro "
+			 System.out.println(""
+			 		 + "\n ========================="
+			 		 + "\n         Cadastro "
+			 		 + "\n ========================="
 			 		 + "\n 0 - Restaurante "
 					 + "\n 1 - Cadastrar Cliente"
-					 + ""
-					 + ""
-					 +" \n ========= \n Sistema \n ========="
-					 + "\n 2 - Visualizar Restaurante"
-					 + "\n 3 - Ler Cardapio "
-					 + "\n 4 - Realizar Pedido "
-					 + "\n 5 - Visualizar Pedidos do Cliente  "
-					 + "\n 6 - Avaliacoes "
+					 + " \n ========================="
+					 + " \n        |Sistema|"
+					 + " \n ========================="
+					 + "\n 2 - Visualizar Clientes"
+					 + "\n 3 - Visualizar Restaurante"
+					 + "\n 4 - Ler Cardapio "
+					 + "\n 5 - Realizar Pedido "
+					 + "\n 6 - Visualizar Pedidos do Cliente  "
+					 + "\n 7 - Avaliacoes "
 					 + "\n 9 - Finalizar Sistema ");
 			 op = Integer.parseInt(in.nextLine());
 			 switch(op) {
 
 			 case 0 : ClasseSistema.cadastrarRes(restaurante);break;
 			 case 1 : ClasseSistema.cadastrarCliente(cliente);break;
-			 case 2 : ClasseSistema.visualizarRes(restaurante);break;
-			 case 3 : ClasseSistema.lerCardapio(restaurante,cliente);break;
-			 case 4 : ClasseSistema.realizarPedido(restaurante,cliente);break;
-			 case 5 : ClasseSistema.visualizaPedidoCliente();break;
-			 case 6 : ClasseSistema.avaliacoes();break;
+			 case 2 : ClasseSistema.visualizarClientes(cliente);break;
+			 case 3 : ClasseSistema.visualizarRes(restaurante);break;
+			 case 4 : ClasseSistema.lerCardapio(restaurante,cliente);break;
+			 case 5 : ClasseSistema.realizarPedido(restaurante,cliente);break;
+			 case 6 : ClasseSistema.visualizaPedidoCliente(restaurante,cliente);break;
+			 case 7 : ClasseSistema.avaliacoes(restaurante,cliente);break;
 			 case 9 :
 			 }
           
