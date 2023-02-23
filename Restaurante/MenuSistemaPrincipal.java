@@ -13,7 +13,6 @@ public class MenuSistemaPrincipal {
 		 do {
 			// op = ClassePrincipal.main(args);
 			 System.out.println(""
-			 		 + "\n ========================="
 			 		 + "\n         Cadastro "
 			 		 + "\n ========================="
 			 		 + "\n 0 - Restaurante "
@@ -24,8 +23,8 @@ public class MenuSistemaPrincipal {
 					 + "\n 2 - Visualizar Clientes"
 					 + "\n 3 - Visualizar Restaurante"
 					 + "\n 4 - Ler Cardapio "
-					 + "\n 5 - Realizar Pedido "
-					 + "\n 6 - Visualizar Pedidos do Cliente  "
+					 + "\n 5 - Visualizar Pedidos do Cliente  "
+					 + "\n 6 - Realizar Pedido  "
 					 + "\n 7 - Avaliacoes "
 					 + "\n 9 - Finalizar Sistema ");
 			 op = Integer.parseInt(in.nextLine());
@@ -36,8 +35,8 @@ public class MenuSistemaPrincipal {
 			 case 2 : ClasseSistema.visualizarClientes(cliente);break;
 			 case 3 : ClasseSistema.visualizarRes(restaurante);break;
 			 case 4 : ClasseSistema.lerCardapio(restaurante,cliente);break;
-			 case 5 : ClasseSistema.realizarPedido(restaurante,cliente);break;
-			 case 6 : ClasseSistema.visualizaPedidoCliente(restaurante,cliente);break;
+			 case 5 : ClasseSistema.visualizaPedidoCliente(restaurante,cliente);break;
+			 case 6 : ClasseSistema.realizarPedido(restaurante,cliente);break;
 			 case 7 : ClasseSistema.avaliacoes(restaurante,cliente);break;
 			 case 9 :
 			 }
